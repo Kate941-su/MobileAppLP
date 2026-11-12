@@ -61,7 +61,8 @@ Node は `.nvmrc`（24）。CI（`.github/workflows/ci.yml`）は PR ごとに l
 
 ## 公開（Vercel）
 
-- リポジトリ: `Kate941-su/MobileAppLP`（公開リポジトリ）
+- リポジトリ: `Kate941-su/vntech`（公開リポジトリ）
+- `main` はルールセット `protect-main` で保護（2026-11-12）: PR 必須（承認 0 人）、CI の `node` チェック通過が必須、force push 禁止
 - **まず Vercel の無料プラン（Hobby）で公開する**（2026-11-12 ユーザー決定）。GitHub のリポジトリを Vercel にインポート（`main` が本番、PR ごとにプレビュー）。Framework は Next.js、設定の変更は不要
 - Hobby は利用規約上「個人・非商用」向け。広告や課金のあるアプリの宣伝が商用とみなされる可能性があるので、収益が出てきたら Pro への切り替えを検討する
 - 本番 URL は Vercel の `VERCEL_PROJECT_PRODUCTION_URL` から自動で入る。独自ドメインにしたら環境変数 `NEXT_PUBLIC_SITE_URL` を設定する（canonical / OG / sitemap に使う）
