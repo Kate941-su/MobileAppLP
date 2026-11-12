@@ -6,6 +6,17 @@ updates:
       interval: "weekly"
       day: "monday"
     open-pull-requests-limit: 5
+    # メジャー更新を見送るもの（2026-11-12）。理由が解消したら行ごと消して手で上げる
+    ignore:
+      # Node は .nvmrc の 24 に固定。型も実行環境に合わせる（Node を上げるときに一緒に上げる）
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+      # TS 7 は typescript-eslint（eslint-config-next 経由）が未対応で lint が落ちる
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+      # ESLint 10 は eslint-config-next の react / import / jsx-a11y プラグインが未対応
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
     groups:
       react:
         patterns:
