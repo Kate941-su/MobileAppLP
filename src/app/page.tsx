@@ -10,6 +10,9 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>{site.name}</h1>
         <p className={styles.lead}>{site.description}</p>
+        <p className={styles.newsLink}>
+          <Link href="/news">お知らせ（アップデート・新機能）</Link>
+        </p>
         <ul className={styles.list}>
           {apps.map((a) => (
             <li key={a.slug}>

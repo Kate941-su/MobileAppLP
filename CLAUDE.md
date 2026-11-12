@@ -11,6 +11,7 @@
   3. フッター: もう一度ダウンロードボタン＋自社アプリへのリンク
 - **素材は Google Play の掲載データ**（アイコン・スクショ・説明文）から作る。ストアと LP の内容をそろえるため、文言も掲載文から外れたことを書かない
 - **1 サイトで複数アプリ**（2026-11-12 ユーザー決定）: `/` にアプリ一覧、`/<slug>` に各アプリの LP。アプリの追加は設定ファイル 1 つと画像だけ
+- **お知らせ**（2026-11-12 ユーザー決定）: アップデートや新機能を紹介する記事。`/news`（全体）、`/<slug>/news`（アプリ別）、`/news/<記事>`、LP のフッター手前に最新 3 件、RSS `/news/feed.xml`。記事は Markdown（`news/*.md`）で書き、PR のマージで公開。下書きはアプリのリポジトリの変更履歴から作る
 - 解析タグ・Cookie・問い合わせフォームは置かない（置くならプライバシーポリシーの更新が必要）
 
 ## アプリ一覧
@@ -29,13 +30,18 @@
 src/content/types.ts          AppLP（LP 1 つ分の設定の型）。各項目の意味はコメント参照
 src/content/apps/<slug>.ts    アプリごとの設定（文言・色・画像・ストア URL）
 src/content/site.ts           LP の並び順、LP なしの自社アプリ、サイト名
-src/components/               Hero / Features / Footer / StoreBadges / Screenshot（全アプリ共通）
+src/components/               Hero / Features / Footer / StoreBadges / Screenshot（全アプリ共通）、News*（お知らせ）
 src/app/[app]/page.tsx        LP（generateStaticParams で静的生成。未登録の slug は 404）
+src/app/[app]/news/           アプリ別のお知らせ一覧
+src/app/news/                 お知らせ一覧・記事（[id]）・RSS（feed.xml）
+src/lib/news.ts               news/*.md の読み込みと検証（front matter の誤りはビルドエラー）
+news/<YYYY-MM-DD>-<id>.md     お知らせ記事。画像は public/news/<ファイル名>/
 public/apps/<slug>/           icon.webp、screenshots/、feature-graphic.png（OG 画像）
 public/badges/                ストアの公式バッジ（日本語）。加工しない
 data/listings/<slug>.json     Play の掲載データの控え（文言を書くときの参照用。ページからは読まない）
 scripts/fetch-store-listing.mjs  Play / App Store から上記の素材を取得
 .claude/skills/app-lp/        LP の追加・更新の手順（スキル）とひな形
+.claude/skills/app-news/      お知らせ記事の追加の手順（スキル）とひな形
 ```
 
 - スクショはストア用の画像（上部に見出し付き）をそのまま使い、`screenshotCaptionRatio` の割合だけ上を切り落として端末部分を見せる
@@ -63,6 +69,7 @@ Node は `.nvmrc`（24）。CI（`.github/workflows/ci.yml`）は PR ごとに l
 ## 作業ルール
 
 - アプリの追加・文言や画像の更新は **`app-lp` スキル**に従う
+- お知らせ記事は **`app-news` スキル**に従う。ストアで配信が始まる前にマージ（公開）しない
 - ブランチ → PR → CI 通過 → ユーザーがマージ。`main` に直接 push しない（`~/.claude/rules/app-maintenance.md`）
 - わからないこと（コピーの方向性、載せる機能の選び方、ドメインなど）は推測で決めずにユーザーに質問し、決まったことはこのファイルに日付付きで追記する
 - アプリ側でストアの掲載文・スクショ・課金・対応 OS を変えたら、この LP も同じタイミングで直す

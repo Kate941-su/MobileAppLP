@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: site.name, template: "%s" },
   description: site.description,
+  alternates: { types: { "application/rss+xml": [{ url: "/news/feed.xml", title: `${site.name} お知らせ` }] } },
 };
 
 export const viewport: Viewport = {

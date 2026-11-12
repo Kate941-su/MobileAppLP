@@ -70,3 +70,12 @@
 .list .card {
   flex: 1;
 }
+
+.newsLink {
+  margin: -24px 0 40px;
+  font-size: 0.875rem;
+}
+
+.newsLink a {
+  color: #555;
+}

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
+import { NewsSection } from "@/components/NewsSection";
 import { apps, findApp } from "@/content/site";
 
 type Props = { params: Promise<{ app: string }> };
@@ -52,6 +53,7 @@ export default async function AppPage({ params }: Props) {
     >
       <Hero app={app} />
       <Features app={app} />
+      <NewsSection app={app} />
       <Footer app={app} />
     </div>
   );

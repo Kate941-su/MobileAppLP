@@ -1,0 +1,258 @@
+/* ---------- ヘッダー（お知らせページ） ---------- */
+.header {
+  border-bottom: 1px solid #e6e8eb;
+  background: #fff;
+}
+
+.headerInner {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.headerSite {
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+}
+
+.headerNav a {
+  color: #555;
+  font-size: 0.875rem;
+}
+
+/* ---------- ページ ---------- */
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+
+.pageTitle {
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.pageLead {
+  margin: 0 0 24px;
+  color: #666;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.filters a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid #dfe1e5;
+  border-radius: 999px;
+  color: #444;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.filters a[aria-current="page"] {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+
+.rss {
+  font-size: 0.8125rem;
+}
+
+.rss a {
+  color: #777;
+}
+
+/* ---------- 一覧 ---------- */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #e6e8eb;
+}
+
+.list li {
+  border-bottom: 1px solid #e6e8eb;
+}
+
+.item {
+  display: block;
+  padding: 20px 4px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.item:hover .title {
+  text-decoration: underline;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  font-size: 0.8125rem;
+  color: #777;
+}
+
+.category {
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: #eef0f3;
+  color: #444;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.category[data-category="feature"] {
+  background: #fff1e8;
+  color: #b04a17;
+}
+
+.category[data-category="update"] {
+  background: #e8f3ff;
+  color: #1a5fb4;
+}
+
+.app {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.appIcon {
+  border-radius: 22%;
+}
+
+.title {
+  display: block;
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.summary {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.empty {
+  color: #777;
+}
+
+/* ---------- LP の「お知らせ」 ---------- */
+.section {
+  padding: 72px 24px;
+}
+
+.sectionInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.more {
+  margin: 20px 0 0;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.more a {
+  color: var(--brand, #222);
+}
+
+/* ---------- 記事 ---------- */
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+
+.articleTitle {
+  margin: 12px 0 24px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.45;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.body {
+  line-height: 1.95;
+}
+
+.body h2 {
+  margin: 40px 0 12px;
+  font-size: 1.25rem;
+}
+
+.body h3 {
+  margin: 28px 0 8px;
+  font-size: 1.0625rem;
+}
+
+.body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+  border-radius: 12px;
+}
+
+.body ul,
+.body ol {
+  padding-left: 1.4em;
+}
+
+.body a {
+  color: #1a5fb4;
+}
+
+.body table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.body th,
+.body td {
+  border: 1px solid #dfe1e5;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.back {
+  margin-top: 40px;
+  font-size: 0.875rem;
+}
+
+.back a {
+  color: #555;
+}
