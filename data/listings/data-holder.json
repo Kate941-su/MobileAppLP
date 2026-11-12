@@ -1,0 +1,19 @@
+{
+  "slug": "data-holder",
+  "packageId": "com.dataholder.dataholder",
+  "title": "Data Holder",
+  "playUrl": "https://play.google.com/store/apps/details?id=com.dataholder.dataholder",
+  "appStoreUrl": "https://apps.apple.com/jp/app/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%9B%E3%83%AB%E3%83%80%E3%83%BC/id6830575982",
+  "screenshots": [
+    "/apps/data-holder/screenshots/01.webp",
+    "/apps/data-holder/screenshots/02.webp",
+    "/apps/data-holder/screenshots/03.webp",
+    "/apps/data-holder/screenshots/04.webp",
+    "/apps/data-holder/screenshots/05.webp",
+    "/apps/data-holder/screenshots/06.webp",
+    "/apps/data-holder/screenshots/07.webp",
+    "/apps/data-holder/screenshots/08.webp"
+  ],
+  "description": "Data Holder は、ログイン情報、身分証の記載事項、メモなど、手元に置いておきたい情報をスマートフォンの中だけに保管するアプリです。アカウント登録、広告、利用状況の解析はありません。\n\n■ プライバシーを最優先に\n・データは端末内にだけ保存され、開発者に送信されることはありません\n・項目名と値は暗号化し、その鍵は端末のセキュアな領域で保護します\n・値は、表示を選ぶまで伏せたままです\n・コピーした値は 60 秒後にクリップボードから自動で消去します\n\n■ パスポートを NFC で読み取り\n・パスポートの IC チップから、顔写真を含む情報を入力の手間なく Vault に保存できます\n・チップの署名を端末内で確認します\n・NFC に対応した端末が必要です\n\n■ かんたんに整理\n・項目を自由に作れる Vault のほか、ログイン、パスポート、クレジットカードのテンプレートも使えます\n・検索、並べ替え、お気に入りに対応\n・ライトモードとダークモード\n\n■ 自分で管理できるバックアップ\n・パスワード付きのバックアップファイルを書き出し、別の端末で復元できます\n・パスワードは保存も送信もされません。忘れるとバックアップは復元できません\n\n■ Data Holder Pro（買い切り・サブスクなし）\n・Vault を無制限に保存（無料プランは 20 件まで）\n・フォルダとタグで整理、絞り込み\n・顔、指紋、端末の PIN によるアプリロック\n・PC へ移せる JSON / CSV 書き出し（ファイルは暗号化されません）\n・9 色のプレミアムテーマカラー",
+  "fetchedAt": "2026-11-12"
+}
