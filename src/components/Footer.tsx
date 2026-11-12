@@ -78,6 +78,7 @@ export function Footer({ app }: { app?: AppLP }) {
             サポート
           </a>
         )}
+        <Link href={app ? `/${app.slug}/news` : "/news"}>お知らせ</Link>
         <a href={site.googlePlayDeveloper} target="_blank" rel="noopener">
           Google Play のデベロッパーページ
         </a>
