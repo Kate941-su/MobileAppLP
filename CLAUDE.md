@@ -55,7 +55,9 @@ Node は `.nvmrc`（24）。CI（`.github/workflows/ci.yml`）は PR ごとに l
 
 ## 公開（Vercel）
 
-- GitHub のリポジトリを Vercel にインポートして公開する（`main` が本番、PR ごとにプレビュー）。Framework は Next.js、設定の変更は不要
+- リポジトリ: `Kate941-su/MobileAppLP`（公開リポジトリ）
+- **まず Vercel の無料プラン（Hobby）で公開する**（2026-11-12 ユーザー決定）。GitHub のリポジトリを Vercel にインポート（`main` が本番、PR ごとにプレビュー）。Framework は Next.js、設定の変更は不要
+- Hobby は利用規約上「個人・非商用」向け。広告や課金のあるアプリの宣伝が商用とみなされる可能性があるので、収益が出てきたら Pro への切り替えを検討する
 - 本番 URL は Vercel の `VERCEL_PROJECT_PRODUCTION_URL` から自動で入る。独自ドメインにしたら環境変数 `NEXT_PUBLIC_SITE_URL` を設定する（canonical / OG / sitemap に使う）
 
 ## 作業ルール
@@ -65,8 +67,11 @@ Node は `.nvmrc`（24）。CI（`.github/workflows/ci.yml`）は PR ごとに l
 - わからないこと（コピーの方向性、載せる機能の選び方、ドメインなど）は推測で決めずにユーザーに質問し、決まったことはこのファイルに日付付きで追記する
 - アプリ側でストアの掲載文・スクショ・課金・対応 OS を変えたら、この LP も同じタイミングで直す
 
-## 未決事項（ユーザーに確認中）
+## 決定事項
+
+- 2026-11-12: トップページのサイト名は「Kaito Kitaya のアプリ」
+- 2026-11-12: データホルダーの NFC 読み取り画面のスクショはまだ無い。POINT 03 はテキストのみのまま。用意できたら `public/apps/data-holder/screenshots/` に置き、`features[2].image` に指定する
+
+## 未決事項
 
 - 独自ドメインを使うか（未定の間は `*.vercel.app`）
-- データホルダーの NFC 読み取り画面のスクショを用意するか
-- トップページ（`/`）のサイト名「Kaito Kitaya のアプリ」でよいか
