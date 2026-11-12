@@ -1,0 +1,22 @@
+# deps / build
+/node_modules
+/.next/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# secrets (explicit patterns)
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.jks
+*.keystore
+
+# os / logs
+.DS_Store
+npm-debug.log*

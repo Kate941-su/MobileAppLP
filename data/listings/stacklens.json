@@ -1,0 +1,23 @@
+{
+  "slug": "stacklens",
+  "packageId": "jp.vntech.stacklens",
+  "title": "スタックレンズ - アプリの技術スタック判定",
+  "playUrl": "https://play.google.com/store/apps/details?id=jp.vntech.stacklens",
+  "appStoreUrl": null,
+  "screenshots": [
+    "/apps/stacklens/screenshots/01.webp",
+    "/apps/stacklens/screenshots/02.webp",
+    "/apps/stacklens/screenshots/03.webp",
+    "/apps/stacklens/screenshots/04.webp",
+    "/apps/stacklens/screenshots/05.webp",
+    "/apps/stacklens/screenshots/06.webp",
+    "/apps/stacklens/screenshots/07.webp",
+    "/apps/stacklens/screenshots/08.webp",
+    "/apps/stacklens/screenshots/09.webp",
+    "/apps/stacklens/screenshots/10.webp",
+    "/apps/stacklens/screenshots/11.webp",
+    "/apps/stacklens/screenshots/12.webp"
+  ],
+  "description": "スタックレンズは、スマホに入っているアプリがどの技術で作られているかを調べる、開発者向けのツールです。\n\n■ できること\n・Flutter / React Native / Unity / .NET MAUI / Compose Multiplatform / Capacitor / Cordova / Godot / Unreal Engine などを判定\n・Flutter アプリは Flutter と Dart のバージョンまで特定（公式のリリース一覧と照合）\n・Flutter アプリが使っているパッケージ（riverpod、dio など）を一覧表示\n・各パッケージの pub.dev ページと、Zenn・Qiita の関連記事にワンタップでアクセス\n・「私のスマホの技術スタック」を画像カードにして X などで共有\n\n■ プライバシー\n・解析はすべて端末内で行います。インストール済みアプリの一覧を外部に送信することはありません\n・読み取るのは、各アプリの APK ファイル（インストール時に端末へ保存される公開ファイル）だけです\n・すべてのアプリを読み取る特別な権限は使っていません。そのため、ホーム画面にアイコンがあるアプリが対象です\n\n■ こんな方におすすめ\n・Flutter や React Native の国内での採用事例を知りたいエンジニア\n・技術選定の参考にしたい方\n・気になるアプリがどのパッケージを使っているか調べたい方\n\n■ 料金\n無料（バナー広告あり）。買い切りの「プレミアム」で、広告の非表示・テーマカラー 9 色・ダークモードが使えます。\n\n※ ビルド方法によっては、バージョンやパッケージを取得できない場合があります。\n※ Flutter は Google LLC の商標です。本アプリは Google、Meta、Unity などの各社とは関係がありません。",
+  "fetchedAt": "2026-11-12"
+}
